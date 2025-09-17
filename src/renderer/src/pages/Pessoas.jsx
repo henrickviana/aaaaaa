@@ -40,7 +40,7 @@ export default function Pessoas() {
     <div className="pt-10">
       <h1 className="text-4xl text-[#1A6D12] font-black py-4 text-center">Controle de Pessoas</h1>
       {/* texto do input da tabela */}
-      <p className="text-black ps-30 mt-15 mb-3">Nome da Pessoa</p>
+      <p className="text-black ps-30 mt-10 mb-3">Nome da Pessoa</p>
       {/* container da tabela */}
       <div className=" w-full px-30">
         <TableContainer
@@ -50,7 +50,7 @@ export default function Pessoas() {
           onClick={openModal}
         />
         {/* escolher entre tabelas */}
-        <div className="mt-3 flex justify-between">
+        <div className="mt-5 mb-5 flex justify-between">
           <Button
             onClick={() => changeData('cliente')}
             className={`${selected === 'cliente' ? 'text-white bg-[#1A6D12] hover:bg-[#145A0C]' : 'text-[#1A6D12] border-solid border border-[#1A6D12] hover:bg-[#ececec]'} w-60`}
